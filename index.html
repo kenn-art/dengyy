@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our 15th Monthsary ❤️</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #120d12;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+.hearts {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.heart {
+    position: absolute;
+    bottom: -50px;
+
+    color: #e98aaa;
+
+    font-size: 20px;
+
+    opacity: 0;
+
+    animation: floatHeart 8s linear forwards;
+}
+
+@keyframes floatHeart {
+
+    0% {
+        transform:
+            translateY(0)
+            rotate(0deg)
+            scale(.7);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: .8;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        transform:
+            translateY(-110vh)
+            rotate(360deg)
+            scale(1.2);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    position: relative;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #5b2948 0%,
+            #291522 35%,
+            #120d12 75%
+        );
+
+    overflow: hidden;
+}
+
+
+/* glowing circle */
+
+.hero::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    border-radius: 50%;
+
+    background: rgba(224, 125, 160, .08);
+
+    filter: blur(70px);
+
+    animation: glow 5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+
+    from {
+        transform: scale(.9);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    animation: fadeUp 2s ease;
+}
+
+
+.small-text {
+
+    font-size: 14px;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    color: #eab6c8;
+
+    margin-bottom: 20px;
+}
+
+
+.number {
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: clamp(
+        140px,
+        25vw,
+        270px
+    );
+
+    line-height: .75;
+
+    font-weight: 600;
+
+    color: transparent;
+
+    -webkit-text-stroke:
+        1px #e8a9c0;
+
+    text-shadow:
+        0 0 50px
+        rgba(232,169,192,.25);
+}
+
+
+.monthsary {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:
+        clamp(45px, 9vw, 85px);
+
+    margin-top: 25px;
+
+    font-weight: 500;
+}
+
+
+.hero p {
+
+    color: #d8bdca;
+
+    margin:
+        25px auto;
+
+    max-width: 620px;
+
+    line-height: 1.9;
+
+    font-size: 15px;
+}
+
+
+.scroll {
+
+    display: inline-block;
+
+    margin-top: 35px;
+
+    padding:
+        14px 32px;
+
+    border:
+        1px solid #a96c87;
+
+    border-radius: 50px;
+
+    color: #f4cbd9;
+
+    text-decoration: none;
+
+    transition: .4s;
+}
+
+.scroll:hover {
+
+    background: #a96c87;
+
+    color: white;
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+section {
+
+    padding: 110px 8%;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 65px;
+}
+
+
+.section-title span {
+
+    color: #d895b0;
+
+    font-size: 13px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+
+.section-title h2 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 55px;
+
+    font-weight: 500;
+
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   COUNTER
+========================================= */
+
+.counter-section {
+
+    text-align: center;
+
+    background: #181018;
+}
+
+
+.counter {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+}
+
+
+.counter-box {
+
+    width: 140px;
+
+    padding: 28px 10px;
+
+    border:
+        1px solid #492c3c;
+
+    background:
+        rgba(255,255,255,.03);
+
+    border-radius: 18px;
+
+    transition: .4s;
+}
+
+
+.counter-box:hover {
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        #a96c87;
+
+    box-shadow:
+        0 15px 40px
+        rgba(0,0,0,.25);
+}
+
+
+.counter-box strong {
+
+    display: block;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 45px;
+
+    color: #e8a9c0;
+}
+
+
+.counter-box span {
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #bda9b3;
+}
+
+
+/* =========================================
+   LOVE LETTER
+========================================= */
+
+.letter {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: #21151e;
+
+    padding: 60px;
+
+    border:
+        1px solid #49303d;
+
+    box-shadow:
+        0 25px 70px
+        rgba(0,0,0,.35);
+
+    border-radius: 8px;
+
+    position: relative;
+}
+
+
+.letter::before {
+
+    content: "♡";
+
+    position: absolute;
+
+    top: 20px;
+
+    right: 30px;
+
+    color: #a96c87;
+
+    font-size: 40px;
+}
+
+
+.letter h3 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+
+    color: #efbfd0;
+}
+
+
+.letter p {
+
+    color: #d5c2ca;
+
+    line-height: 2;
+
+    margin-bottom: 20px;
+}
+
+
+.signature {
+
+    text-align: right;
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 30px;
+
+    color: #e5a9bf;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================
+   MEMORIES
+========================================= */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+.photo {
+
+    height: 380px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            #39212e,
+            #1c1119
+        );
+
+    border:
+        1px solid #49303d;
+
+    transition: .5s;
+}
+
+
+.photo:nth-child(2) {
+
+    transform:
+        translateY(35px);
+}
+
+
+.photo:hover {
+
+    transform:
+        translateY(-10px)
+        scale(1.02);
+
+    box-shadow:
+        0 25px 60px
+        rgba(0,0,0,.4);
+}
+
+
+.photo:nth-child(2):hover {
+
+    transform:
+        translateY(25px)
+        scale(1.02);
+}
+
+
+.photo img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .7s;
+}
+
+
+.photo:hover img {
+
+    transform: scale(1.08);
+}
+
+
+.placeholder {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    color: #bfa9b4;
+
+    padding: 20px;
+}
+
+
+/* =========================================
+   REASONS
+========================================= */
+
+.reasons {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.reason {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px;
+
+    margin-bottom: 15px;
+
+    border-bottom:
+        1px solid #392532;
+
+    transition: .3s;
+}
+
+
+.reason:hover {
+
+    padding-left: 35px;
+
+    border-color:
+        #a96c87;
+}
+
+
+.reason-number {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 38px;
+
+    color: #d895b0;
+
+    min-width: 50px;
+}
+
+
+.reason p {
+
+    color: #d2c0c9;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   FINAL SECTION
+========================================= */
+
+.final {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #51243e,
+            #160d14 65%
+        );
+}
+
+
+.final h2 {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size:
+        clamp(55px, 10vw, 105px);
+
+    font-weight: 500;
+
+    animation:
+        gentlePulse 3s
+        ease-in-out
+        infinite;
+}
+
+
+@keyframes gentlePulse {
+
+    0%,100% {
+        text-shadow:
+            0 0 10px
+            rgba(255,255,255,.05);
+    }
+
+    50% {
+        text-shadow:
+            0 0 40px
+            rgba(232,169,192,.35);
+    }
+}
+
+
+.final p {
+
+    margin:
+        20px auto 35px;
+
+    color: #d9c3cd;
+
+    max-width: 620px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   LOVE BUTTON
+========================================= */
+
+.love-button {
+
+    border: none;
+
+    background:
+        #c47798;
+
+    color: white;
+
+    padding:
+        17px 38px;
+
+    border-radius: 50px;
+
+    font-family:
+        'Poppins',
+        sans-serif;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: .4s;
+
+    box-shadow:
+        0 10px 30px
+        rgba(196,119,152,.2);
+}
+
+
+.love-button:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.04);
+
+    background:
+        #d58aaa;
+
+    box-shadow:
+        0 15px 40px
+        rgba(196,119,152,.35);
+}
+
+
+/* =========================================
+   VIDEO SURPRISE
+========================================= */
+
+.video-surprise {
+
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 9999;
+
+    background:
+        rgba(10,5,10,.94);
+
+    backdrop-filter:
+        blur(14px);
+
+    -webkit-backdrop-filter:
+        blur(14px);
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    animation:
+        modalFade .4s ease;
+}
+
+
+@keyframes modalFade {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.video-box {
+
+    position: relative;
+
+    width:
+        min(900px, 96%);
+
+    max-height: 92vh;
+
+    overflow-y: auto;
+
+    background:
+        #21151e;
+
+    padding: 30px;
+
+    border:
+        1px solid #6b4055;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 30px 100px
+        rgba(0,0,0,.7);
+
+    animation:
+        videoAppear .6s ease;
+}
+
+
+@keyframes videoAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.8)
+            translateY(40px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+
+.video-title {
+
+    font-family:
+        'Cormorant Garamond',
+        serif;
+
+    font-size: 36px;
+
+    text-align: center;
+
+    color: #f1c6d5;
+
+    margin-bottom: 20px;
+}
+
+
+.video-box video {
+
+    width: 100%;
+
+    max-height: 68vh;
+
+    display: block;
+
+    border-radius: 14px;
+
+    background: black;
+
+    outline: none;
+}
+
+
+.video-message {
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: #d5c2ca;
+
+    line-height: 1.8;
+}
+
+
+.close-video {
+
+    position: absolute;
+
+    right: 12px;
+
+    top: 10px;
+
+    width: 42px;
+
+    height: 42px;
+
+    border:
+        1px solid #8b536d;
+
+    border-radius: 50%;
+
+    background:
+        #c47798;
+
+    color: white;
+
+    font-size: 27px;
+
+    cursor: pointer;
+
+    z-index: 5;
+
+    transition: .3s;
+}
+
+
+.close-video:hover {
+
+    transform:
+        scale(1.1)
+        rotate(5deg);
+
+    background:
+        #d58aaa;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 35px;
+
+    color: #806b75;
+
+    font-size: 12px;
+
+    background: #120d12;
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(40px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    section {
+
+        padding:
+            80px 6%;
+    }
+
+
+    .section-title h2 {
+
+        font-size: 45px;
+    }
+
+
+    .gallery {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .photo {
+
+        height: 400px;
+    }
+
+
+    .photo:nth-child(2) {
+
+        transform: none;
+    }
+
+
+    .photo:nth-child(2):hover {
+
+        transform:
+            translateY(-10px)
+            scale(1.02);
+    }
+
+
+    .letter {
+
+        padding: 30px;
+    }
+
+
+    .letter h3 {
+
+        font-size: 32px;
+    }
+
+
+    .counter-box {
+
+        width: 120px;
+    }
+
+
+    .video-box {
+
+        padding: 20px 15px;
+
+        border-radius: 16px;
+    }
+
+
+    .video-title {
+
+        font-size: 29px;
+
+        padding:
+            0 35px;
+    }
+
+
+    .video-box video {
+
+        max-height: 62vh;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     FLOATING HEARTS
+========================================= -->
+
+<div class="hearts" id="hearts"></div>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="small-text">
+            To the person who makes my world beautiful
+        </div>
+
+
+        <div class="number">
+            15
+        </div>
+
+
+        <div class="monthsary">
+            Months of Us
+        </div>
+
+
+        <p>
+            Fifteen months of laughter, memories,
+            little moments, and a love that continues
+            to grow every day.
+        </p>
+
+
+        <a href="#counter" class="scroll">
+            Our little story ↓
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     COUNTER
+========================================= -->
+
+<section
+    class="counter-section"
+    id="counter"
+>
+
+    <div class="section-title">
+
+        <span>
+            Time flies when I'm with you
+        </span>
+
+        <h2>
+            15 Months Together
+        </h2>
+
+    </div>
+
+
+    <div class="counter">
+
+        <div class="counter-box">
+
+            <strong id="days">
+                0
+            </strong>
+
+            <span>
+                DAYS
+            </span>
+
+        </div>
+
+
+        <div class="counter-box">
+
+            <strong id="hours">
+                0
+            </strong>
+
+            <span>
+                HOURS
+            </span>
+
+        </div>
+
+
+        <div class="counter-box">
+
+            <strong id="minutes">
+                0
+            </strong>
+
+            <span>
+                MINUTES
+            </span>
+
+        </div>
+
+
+        <div class="counter-box">
+
+            <strong id="seconds">
+                0
+            </strong>
+
+            <span>
+                SECONDS
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     LOVE LETTER
+========================================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            A letter for you
+        </span>
+
+        <h2>
+            To My Favorite Person
+        </h2>
+
+    </div>
+
+
+<!-- =========================================
+     MEMORIES
+========================================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <span>
+            Our memories
+        </span>
+
+        <h2>
+            Little Moments, Big Memories
+        </h2>
+
+    </div>
+
+
+    <div class="gallery">
+
+
+        <!-- PHOTO 1 -->
+
+        <div class="photo">
+
+            <img
+                src="1.png"
+                alt="Our memory"
+                onerror="this.style.display='none'"
+            >
+
+            <div class="placeholder">
+
+      
+                <br><br>
+
+               
+
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO 2 -->
+
+        <div class="photo">
+
+            <img
+                src="2.png"
+                alt="Our memory"
+                onerror="this.style.display='none'"
+            >
+
+            <div class="placeholder">
+
+  
+
+                <br><br>
+
+           
+            </div>
+
+        </div>
+
+
+
+        <!-- PHOTO 3 -->
+
+        <div class="photo">
+
+            <img
+                src="3.png"
+                alt="Our memory"
+                onerror="this.style.display='none'"
+            >
+
+            <div class="placeholder">
+
+       
+
+                <br><br>
+
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+</section>
+
+<!-- =========================================
+     FINAL SECTION
+========================================= -->
+
+<section class="final">
+
+    <div>
+
+
+        <div class="small-text">
+            And one more thing...
+        </div>
+
+
+        <h2>
+            I Love You. ❤️
+        </h2>
+
+
+        <p>
+            Thank you for making these past 15 months
+            some of the most beautiful chapters
+            of my life.
+        </p>
+
+
+        <button
+            class="love-button"
+            onclick="showSurprise()"
+        >
+            Click for a little surprise 💌
+        </button>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     VIDEO POPUP
+========================================= -->
+
+<div
+    id="videoSurprise"
+    class="video-surprise"
+>
+
+    <div class="video-box">
+
+
+        <button
+            class="close-video"
+            onclick="closeSurprise()"
+            aria-label="Close video"
+        >
+            ×
+        </button>
+
+
+        <div class="video-title">
+
+            A little something for you ❤️
+
+        </div>
+
+
+        <video
+            id="loveVideo"
+            controls
+            playsinline
+            preload="metadata"
+        >
+
+            <source
+                src="Andeng.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support
+            the video element.
+
+        </video>
+
+
+        <p class="video-message">
+
+            I made this just for you. ❤️
+            <br>
+
+            Happy 15th Monthsary, my love.
+
+        </p>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer>
+
+    Made with love, just for you. ❤️
+
+</footer>
+
+
+
+<script>
+
+/* =========================================
+   YOUR RELATIONSHIP START DATE
+========================================= */
+
+/*
+   CHANGE THIS DATE.
+
+   Example:
+   If you became official on May 27, 2025:
+
+   2025-05-27
+
+*/
+
+const startDate =
+    new Date("2025-05-27T00:00:00");
+
+
+
+/* =========================================
+   LIVE COUNTER
+========================================= */
+
+function updateCounter() {
+
+    const now =
+        new Date();
+
+    const difference =
+        now - startDate;
+
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+
+    const hours =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60) % 24
+        );
+
+
+    const minutes =
+        Math.floor(
+            difference /
+            (1000 * 60) % 60
+        );
+
+
+    const seconds =
+        Math.floor(
+            difference /
+            1000 % 60
+        );
+
+
+    document.getElementById("days")
+        .textContent = days;
+
+
+    document.getElementById("hours")
+        .textContent = hours;
+
+
+    document.getElementById("minutes")
+        .textContent = minutes;
+
+
+    document.getElementById("seconds")
+        .textContent = seconds;
+
+}
+
+
+setInterval(
+    updateCounter,
+    1000
+);
+
+
+updateCounter();
+
+
+
+/* =========================================
+   FLOATING HEARTS
+========================================= */
+
+const heartsContainer =
+    document.getElementById("hearts");
+
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+
+    heart.classList.add(
+        "heart"
+    );
+
+
+    heart.innerHTML =
+        Math.random() > .5
+        ? "♡"
+        : "♥";
+
+
+    heart.style.left =
+        Math.random() * 100 + "%";
+
+
+    heart.style.fontSize =
+        (Math.random() * 20 + 12)
+        + "px";
+
+
+    heart.style.animationDuration =
+        (Math.random() * 5 + 5)
+        + "s";
+
+
+    heartsContainer.appendChild(
+        heart
+    );
+
+
+    setTimeout(
+        () => {
+            heart.remove();
+        },
+        10000
+    );
+
+}
+
+
+setInterval(
+    createHeart,
+    700
+);
+
+
+
+/* =========================================
+   VIDEO SURPRISE
+========================================= */
+
+function showSurprise() {
+
+    const videoSurprise =
+        document.getElementById(
+            "videoSurprise"
+        );
+
+
+    const video =
+        document.getElementById(
+            "loveVideo"
+        );
+
+
+    videoSurprise.style.display =
+        "flex";
+
+
+    document.body.style.overflow =
+        "hidden";
+
+
+    video.currentTime =
+        0;
+
+
+    /*
+       Some browsers prevent
+       autoplay with sound.
+
+       If autoplay is blocked,
+       she can simply press Play.
+    */
+
+    video.play().catch(() => {});
+
+
+    /*
+       EXTRA HEARTS
+    */
+
+    for (
+        let i = 0;
+        i < 15;
+        i++
+    ) {
+
+        setTimeout(
+            createHeart,
+            i * 100
+        );
+
+    }
+
+}
+
+
+
+/* =========================================
+   CLOSE VIDEO
+========================================= */
+
+function closeSurprise() {
+
+    const videoSurprise =
+        document.getElementById(
+            "videoSurprise"
+        );
+
+
+    const video =
+        document.getElementById(
+            "loveVideo"
+        );
+
+
+    video.pause();
+
+
+    video.currentTime =
+        0;
+
+
+    videoSurprise.style.display =
+        "none";
+
+
+    document.body.style.overflow =
+        "";
+
+}
+
+
+
+/* =========================================
+   CLICK OUTSIDE VIDEO TO CLOSE
+========================================= */
+
+document
+    .getElementById("videoSurprise")
+    .addEventListener(
+        "click",
+        function(event) {
+
+            if (
+                event.target === this
+            ) {
+
+                closeSurprise();
+
+            }
+
+        }
+    );
+
+
+
+/* =========================================
+   ESC KEY TO CLOSE
+========================================= */
+
+document.addEventListener(
+    "keydown",
+    function(event) {
+
+        if (
+            event.key === "Escape"
+        ) {
+
+            closeSurprise();
+
+        }
+
+    }
+);
+
+</script>
+
+
+</body>
+</html>
